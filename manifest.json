@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "OpenAPI Preview",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js", "spec_load.js"],
+    "persistence": false
+  },
+  "web_accessible_resources": ["redoc.html"],
+  "permissions": ["tabs"]
+}
