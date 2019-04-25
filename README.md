@@ -18,3 +18,9 @@ Files named `openapi.{yaml,yml}` and `swagger.{yaml.yml}`.
 
 After switching tabs in a pull request, you will need to refresh the page for
 the extension to identify the files present.
+
+## What do you see?
+
+After installing the extension, go to a [pull request that has a OpenAPI spec](https://github.com/rafasf/gh-openapi-preview/pull/1/files) and you will see the following:
+
+![Example](./docs/example_pull_request.png)
