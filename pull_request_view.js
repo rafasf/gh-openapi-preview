@@ -4,6 +4,7 @@ function rawPathFor(blobPath) {
 
 const previewFiles = [...document.querySelectorAll(".file-header")]
   .map(fileHeader => ({
+    title: document.title,
     filePath: fileHeader.getAttribute("data-path"),
     rawFilePath: rawPathFor(
       fileHeader.querySelector(".file-actions a").getAttribute("href"),

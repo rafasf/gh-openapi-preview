@@ -1,4 +1,4 @@
-function linkFor({filePath, rawFilePath}) {
+function linkFor({title, filePath, rawFilePath}) {
   elem = document.createElement("div");
   elem.innerHTML = `Preview ${filePath}`;
   elem.setAttribute(
@@ -7,6 +7,7 @@ function linkFor({filePath, rawFilePath}) {
   );
   elem.onclick = function() {
     chrome.extension.sendMessage({
+      title: title,
       msg: "openSpec",
       specUrl: `${rawFilePath}`,
     });

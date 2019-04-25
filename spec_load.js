@@ -6,4 +6,5 @@ function specElement(spec) {
 
 const params = new URLSearchParams(window.location.search);
 
+document.title = params.get("title");
 document.body.appendChild(specElement(params.get("spec")));
