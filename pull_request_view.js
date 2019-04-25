@@ -7,11 +7,11 @@ const previewFiles = [...document.querySelectorAll(".file-header")]
     title: document.title,
     filePath: fileHeader.getAttribute("data-path"),
     rawFilePath: rawPathFor(
-      fileHeader.querySelector(".file-actions a").getAttribute("href"),
-    ),
+      fileHeader.querySelector(".file-actions a").getAttribute("href")
+    )
   }))
   .filter(fileHeader =>
-    /(swagger|openapi)\.(yaml|yml)/.test(fileHeader.filePath),
+    /(swagger|openapi)\.(yaml|yml)/.test(fileHeader.filePath)
   );
 
 for (file of previewFiles) {
