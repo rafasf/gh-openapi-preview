@@ -1,0 +1,4 @@
+fileignoreconfig:
+  - filename: redoc.standalone.js
+    checksum: ec6ccb6e6bb1f4bd7b55991a861bd8f8652a9ff51b64044fe1f2fbe64c3c1e56
+    ignore_detectors: []
