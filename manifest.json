@@ -2,6 +2,11 @@
   "manifest_version": 2,
   "name": "OpenAPI Preview",
   "version": "0.1",
+
+  "description": "Preview OpenAPI files in Pull Requests and single file visualisation",
+
+  "author": "Rafael Ferreira",
+
   "content_scripts": [
     {
       "matches": ["https://github.com/*pull*"],
