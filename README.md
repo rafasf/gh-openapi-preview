@@ -6,7 +6,7 @@ in a new tab. :smile:
 
 ## What does it look for?
 
-Files named `openapi.{yaml,yml}` and `swagger.{yaml.yml}`.
+Files named `openapi.{yaml,yml}`, `api.{yaml,yml}` and `swagger.{yaml.yml}`.
 
 ## Usage
 
