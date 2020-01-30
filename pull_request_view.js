@@ -11,7 +11,7 @@ const previewFiles = [...document.querySelectorAll(".file-header")]
     )
   }))
   .filter(fileHeader =>
-    /(swagger|openapi)\.(yaml|yml)/.test(fileHeader.filePath)
+    /(swagger|openapi|api)\.(yaml|yml)/.test(fileHeader.filePath)
   );
 
 for (file of previewFiles) {
